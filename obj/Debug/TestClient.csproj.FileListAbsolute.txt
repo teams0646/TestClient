@@ -1,0 +1,11 @@
+C:\Users\Kirill Fishchuk\source\repos\TestClient\obj\Debug\TestClient.csproj.AssemblyReference.cache
+C:\Users\Kirill Fishchuk\source\repos\TestClient\obj\Debug\TestClient.csproj.SuggestedBindingRedirects.cache
+C:\Users\Kirill Fishchuk\source\repos\TestClient\obj\Debug\TestClient.Form1.resources
+C:\Users\Kirill Fishchuk\source\repos\TestClient\obj\Debug\TestClient.Properties.Resources.resources
+C:\Users\Kirill Fishchuk\source\repos\TestClient\obj\Debug\TestClient.csproj.GenerateResource.cache
+C:\Users\Kirill Fishchuk\source\repos\TestClient\obj\Debug\TestClient.csproj.CoreCompileInputs.cache
+C:\Users\Kirill Fishchuk\source\repos\TestClient\bin\Debug\TestClient.exe.config
+C:\Users\Kirill Fishchuk\source\repos\TestClient\bin\Debug\TestClient.exe
+C:\Users\Kirill Fishchuk\source\repos\TestClient\bin\Debug\TestClient.pdb
+C:\Users\Kirill Fishchuk\source\repos\TestClient\obj\Debug\TestClient.exe
+C:\Users\Kirill Fishchuk\source\repos\TestClient\obj\Debug\TestClient.pdb

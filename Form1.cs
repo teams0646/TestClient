@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Net.Http;
+using System.Reflection.Emit;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
@@ -29,8 +31,44 @@ namespace TestClient
         public Form1()
         {
             InitializeComponent();
+            fillContents();
             _httpClient.BaseAddress = new Uri(BaseUrl);
         }
+
+       
+
+
+        private void fillContents()
+        {
+            label1.Text = "Welcome!";
+            testsListBox.Items.Add("Test 1");
+            testsListBox.Items.Add("Test 2");
+            testsListBox.Items.Add("Test 3");
+            questionLabel.Text = "What is your name?";
+            answerARadioButton.Text = "John";
+            answerBRadioButton.Text = "Mary";
+            answerCRadioButton.Text = "Jane";
+            answerDRadioButton.Text = "Bob";
+            feedbackLabel.Text = "";
+
+            // Populate dgvGroupTests with default data
+            DataTable dtGroupTests = new DataTable();
+            dtGroupTests.Columns.Add("TestName", typeof(string));
+            dtGroupTests.Columns.Add("GroupName", typeof(string));
+            dtGroupTests.Rows.Add("Test 1", "Group A");
+            dtGroupTests.Rows.Add("Test 2", "Group B");
+            dtGroupTests.Rows.Add("Test 3", "Group C");
+
+            // Populate dgvUsers with default data
+            DataTable dtUsers = new DataTable();
+            dtUsers.Columns.Add("Name", typeof(string));
+            dtUsers.Columns.Add("Email", typeof(string));
+            dtUsers.Rows.Add("John Smith", "john.smith@example.com");
+            dtUsers.Rows.Add("Jane Doe", "jane.doe@example.com");
+            dtUsers.Rows.Add("Bob Johnson", "bob.johnson@example.com");
+
+        }
+
 
 
         private bool Authenticate(string username, string password)
@@ -483,6 +521,18 @@ namespace TestClient
         private void answerGroupBox_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (usernameTextBox.Text == "root" && passwordTextBox.Text == "rootroot")
+            {
+                MessageBox.Show("Login successful!");
+                loginGroupBox.Hide();
+            }
+            else {
+                MessageBox.Show("Login unsuccessful!");
+            }
         }
     }
 

@@ -44,8 +44,9 @@
             this.questionGroupBox = new System.Windows.Forms.GroupBox();
             this.testsGroupBox = new System.Windows.Forms.GroupBox();
             this.loginGroupBox = new System.Windows.Forms.GroupBox();
-            this.usernameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
+            this.usernameTextBox = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.loginGroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -200,6 +201,7 @@
             // 
             // loginGroupBox
             // 
+            this.loginGroupBox.Controls.Add(this.button1);
             this.loginGroupBox.Controls.Add(this.passwordTextBox);
             this.loginGroupBox.Controls.Add(this.usernameTextBox);
             this.loginGroupBox.Location = new System.Drawing.Point(311, 252);
@@ -209,6 +211,13 @@
             this.loginGroupBox.TabStop = false;
             this.loginGroupBox.Text = "Login";
             // 
+            // passwordTextBox
+            // 
+            this.passwordTextBox.Location = new System.Drawing.Point(37, 45);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(100, 20);
+            this.passwordTextBox.TabIndex = 1;
+            // 
             // usernameTextBox
             // 
             this.usernameTextBox.Location = new System.Drawing.Point(37, 19);
@@ -216,12 +225,15 @@
             this.usernameTextBox.Size = new System.Drawing.Size(100, 20);
             this.usernameTextBox.TabIndex = 0;
             // 
-            // passwordTextBox
+            // button1
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(37, 45);
-            this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(100, 20);
-            this.passwordTextBox.TabIndex = 1;
+            this.button1.Location = new System.Drawing.Point(48, 71);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "login";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -273,6 +285,7 @@
         private System.Windows.Forms.GroupBox loginGroupBox;
         private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.TextBox usernameTextBox;
+        private System.Windows.Forms.Button button1;
     }
 }
 
